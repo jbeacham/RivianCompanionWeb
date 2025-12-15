@@ -81,6 +81,35 @@
             box-shadow: 0 8px 24px rgba(255,255,255,0.1);
         }
 
+        .kofi-btn {
+            display: inline-block;
+            background: #1a3d1a;
+            color: #4CAF50;
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-left: 16px;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .kofi-btn:hover {
+            transform: translateY(-2px);
+            background: #245024;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-buttons .kofi-btn {
+            margin-left: 0;
+        }
+
         .hero-badge {
             display: inline-block;
             background: #1a3d1a;
@@ -259,7 +288,10 @@
                 <div class="hero-badge">Free for Rivian Owners</div>
                 <h1>Smart Charging,<br><span>Automatic Scheduling</span></h1>
                 <p>Set different charging amperages for each location and let the app automatically update your Rivian when you arrive.</p>
-                <a href="#" class="app-store-btn">Download on the App Store</a>
+                <div class="hero-buttons">
+                    <a href="#" class="app-store-btn">Download on the App Store</a>
+                    <a href="https://ko-fi.com/dotnetdude" target="_blank" class="kofi-btn">🥑 Buy me Guac</a>
+                </div>
             </div>
         </section>
 
@@ -331,7 +363,10 @@
             <div class="container">
                 <h2>Ready to simplify charging?</h2>
                 <p>Download Rivian Companion for free today.</p>
-                <a href="#" class="app-store-btn">Download on the App Store</a>
+                <div class="hero-buttons">
+                    <a href="#" class="app-store-btn">Download on the App Store</a>
+                    <a href="https://ko-fi.com/dotnetdude" target="_blank" class="kofi-btn">🥑 Buy me Guac</a>
+                </div>
             </div>
         </section>
     </main>
